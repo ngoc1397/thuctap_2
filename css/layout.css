@@ -1,0 +1,832 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF2FB;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* get talk */
+
+.get-talk {
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    top: 0;
+    bottom: 0;
+    padding: 110px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 1100;
+    transition: 0.3s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.show-talk {
+    transform: translateX(0);
+    transition: 0.3s linear;
+}
+
+.get-talk ion-icon {
+    color: #06BEE1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.get-talk ion-icon:hover {
+    cursor: pointer;
+}
+
+.get-talk>* {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.get-talk label {
+    margin-bottom: 10px;
+}
+
+.get-talk input {
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 35, 139, 0.425);
+    color: rgba(0, 35, 139, 0.425);
+}
+
+.get-talk textarea {
+    width: 100%;
+    outline: none;
+    height: 80px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 35, 139, 0.425);
+    color: rgba(0, 35, 139, 0.425);
+}
+
+.get-talk input:focus {
+    border: 1px solid rgba(0, 35, 139, 0.9);
+}
+
+.get-talk .get-talk-title {
+    font-size: 2.4rem;
+}
+
+.wrapper {
+    max-width: 1420px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wrapper .header {
+    z-index: 888;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header .header-logo {
+    margin-right: 200px;
+}
+
+.header .header-logo svg {
+    width: 110px;
+    height: 40px;
+}
+
+.header .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 1;
+    gap: 40px;
+}
+
+.header .header-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background: #06BEE1;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.header .btn-header {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.header .btn-header:hover {
+    cursor: pointer;
+}
+
+.header .btn-header ion-icon {
+    color: #666;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* css for menu mobile */
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    padding: 20px 15px;
+    background-color: white;
+    display: none;
+    transition: 0.2s linear;
+    flex-direction: column;
+}
+
+.menu-mobile .header-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-mobile .header-logo ion-icon {
+    width: 30px;
+    height: 30px;
+    color: #06BEE1;
+}
+
+.menu-mobile .header-logo ion-icon:hover {
+    cursor: pointer;
+}
+
+.menu-mobile .header-menu {
+    margin-top: 60px;
+    flex: 1;
+}
+
+.menu-mobile .header-menu .header-talk button {
+    width: 100%;
+    display: block;
+}
+
+.menu-mobile .header-menu li {
+    padding: 10px 0px;
+}
+
+.menu-mobile .header-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.show-menu {
+    transform: translate(0);
+    transition: 0.2s linear;
+}
+
+
+/* css for intro */
+
+.wrapper .intro {
+    position: relative;
+    height: 1000px;
+}
+
+.wrapper .intro .get-started {
+    margin-left: 100px;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    max-width: 620px;
+    z-index: 888;
+}
+
+.wrapper .intro .get-started .get-started-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 50px;
+}
+
+.wrapper .intro .get-started .get-started-des {
+    color: #666;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.wrapper .intro .get-started .get-started-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgba(3, 0, 48, 0.329);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #999;
+    width: auto;
+}
+
+.wrapper .intro .get-started .get-started-mail input {
+    border: none;
+    width: 200px;
+    background-color: inherit;
+    padding: 0 10px;
+    outline: none;
+}
+
+.wrapper .intro .back-ground {
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.wrapper .back-ground .bg-1 {
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    bottom: 0;
+    z-index: 900;
+}
+
+.wrapper .back-ground .bg-2 {
+    position: absolute;
+    right: -100px;
+    left: 200px;
+    z-index: 600;
+    bottom: 100px;
+}
+
+.wrapper .back-ground .bg-3 {
+    position: absolute;
+    right: -100px;
+    z-index: 600;
+    left: 250px;
+    bottom: 100px;
+}
+
+.wrapper .back-ground .bg-4 {
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+    z-index: 600;
+    z-index: 910;
+}
+
+
+/* cando */
+
+.cando {
+    width: 100%;
+    position: relative;
+}
+
+.cando .cando-background {
+    position: absolute;
+    top: -600px;
+    z-index: -1;
+    left: -500px;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background: url('/img/home/what-can-you-do-bg.svg');
+}
+
+.cando .wrapper {
+    z-index: 100;
+    color: white;
+    text-align: center;
+}
+
+.cando .wrapper .cando-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cando .wrapper .cando-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cando .wrapper .cando-container .cando-item {
+    text-align: left;
+    width: 31%;
+}
+
+.cando .wrapper .cando-container .cando-item .cando-item-title {
+    font-size: 1.8rem;
+}
+
+.cando .wrapper .cando-container .cando-item .cando-item-des {
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cando .wrapper .cando-container .cando-item>* {
+    margin-bottom: 30px;
+}
+
+.cando .cando-solution {
+    position: relative;
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cando .cando-solution img {
+    position: absolute;
+    top: -200px;
+    left: -300px;
+    z-index: -1;
+}
+
+.cando .cando-solution .solution-header {
+    background-color: #FF3B30;
+    font-size: 0.7rem;
+    border-radius: 15px;
+    padding: 0px 5px;
+}
+
+.cando .cando-solution .solution-title {
+    font-size: 1.8rem;
+    color: black;
+    line-height: 2.3rem;
+    margin-top: 20px;
+}
+
+.cando .cando-solution .solution-des {
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+.cando .solution-right {
+    position: relative;
+}
+
+.cando .solution-right .solution-right-games {
+    background: linear-gradient( 142.44deg, #ffffff 14.21%, #e9eefa 80.49%);
+    padding: 170px 80px;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    left: 50px;
+    top: -200px;
+}
+
+.cando .solution-right .solution-right-games div:nth-child(1) {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.cando .solution-right .solution-right-providers {
+    background: white;
+    position: absolute;
+    padding: 140px 110px;
+    border-radius: 50%;
+    color: black;
+    bottom: -80px;
+    left: 200px;
+}
+
+.cando .solution-right .solution-right-providers div:nth-child(1) {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.cando .cando-solution .solution-container {
+    width: 560px;
+    margin-left: 120px;
+    text-align: left;
+}
+
+
+/* working css */
+
+.working .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 100;
+    margin-top: 200px;
+    align-items: center;
+}
+
+.working .wrapper .working-right {
+    gap: 60px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.working .wrapper .working-right img {
+    position: absolute;
+    left: -400px;
+    top: -400px;
+    z-index: -2;
+}
+
+.working-right .working-right-analyst {
+    width: 430px;
+}
+
+.working-right .working-right-analyst>* {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.working-right .working-right-analyst .working-analyst-title {
+    font-size: 2.5rem;
+}
+
+.working-right .working-right-analyst .working-analyst-content {
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.working-right .working-right-analyst .working-analyst-bottom {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.working-right .working-right-report ul {
+    color: white;
+}
+
+.working-right .working-right-report ul li {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.working .left-img {
+    z-index: 100;
+    width: 600px;
+}
+
+
+/* CSS FOR REPORTING SECTION */
+
+.game-report .wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 100;
+    align-items: center;
+}
+
+.game-report-content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.game-report-content>* {
+    margin-top: 20px;
+}
+
+.game-report-content .report-content-header {
+    color: white;
+    background-color: #0CD664;
+    padding: 2px 5px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 0.6rem;
+}
+
+.game-report-content .report-content-title {
+    font-size: 2.5rem;
+}
+
+.game-report-content .report-content-content {
+    line-height: 2rem;
+}
+
+.btn-getit {
+    display: inline-flex;
+    background: #666;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+.btn-getit ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-getit .btn-content .btn-header {
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+
+/* company css */
+
+.company .wrapper {
+    max-width: 1310px;
+}
+
+.company .wrapper .company-title {
+    font-size: 2.3rem;
+    margin-bottom: 60px;
+    margin-left: 60px;
+}
+
+.company .wrapper .company-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.company-item {
+    position: relative;
+    width: 145px;
+    height: 70px;
+}
+
+.company-item:hover .company-item-second {
+    z-index: 3;
+}
+
+.company-item-first {
+    position: absolute;
+    z-index: 1;
+}
+
+.company-item-second {
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+/* start casio */
+
+.start-casio .wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.start-casio .wrapper .start-casio-title {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.start-casio .wrapper .start-casio-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgba(3, 0, 48, 0.329);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #999;
+    width: auto;
+}
+
+.start-casio .wrapper .start-casio-mail input {
+    border: none;
+    background-color: inherit;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+}
+
+
+/* css for footer */
+
+.footer {
+    background-image: linear-gradient(#EFF2FB, #FCFCFE);
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    justify-content: space-between;
+}
+
+.footer .wrapper>* {
+    flex: 1;
+}
+
+.footer .wrapper .footer-title {
+    font-weight: 600;
+}
+
+.footer .wrapper ul {
+    margin-top: 20px;
+}
+
+.footer .wrapper ul li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footer .wrapper .footer-res .footer-res-img {
+    padding: 10px 0px;
+}
+
+.footer .wrapper .footer-res .footer-res-img img {
+    margin-right: 10px;
+}
+
+.footer .wrapper .footer-author {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #B9C2DD;
+}
+
+.footer .wrapper .footer-author .footer-author-content {
+    margin: 10px 0px;
+}
+
+
+/* RESPOSIVE */
+
+@media(max-width: 740px) {
+    .wrapper .intro {
+        position: relative;
+    }
+    .wrapper .intro .get-started {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .wrapper .intro .back-ground {
+        position: relative;
+        display: block;
+        top: 100px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 500px;
+    }
+    .back-ground .bg-1 {
+        width: 100%;
+        left: 0;
+    }
+    .wrapper .back-ground .bg-2 {
+        width: 70%;
+        top: 90px;
+        left: -50px;
+    }
+    .wrapper .back-ground .bg-3 {
+        width: 80%;
+        top: 60px;
+        left: -80px;
+    }
+    .wrapper .back-ground .bg-4 {
+        width: 50%;
+        bottom: 140px;
+        right: 20px;
+    }
+    .menu-mobile {
+        display: flex;
+    }
+    .wrapper {
+        max-width: 95%;
+    }
+    .header .btn-header {
+        display: block;
+    }
+    .header .header-menu {
+        display: none;
+    }
+    .header .header-talk {
+        display: none;
+    }
+    /* res for can do */
+    .cando .wrapper .cando-container .cando-item {
+        width: 100%;
+    }
+    /* res for cando container */
+    .cando .cando-solution .solution-container {
+        width: 100%;
+    }
+    .cando .cando-solution .solution-right {
+        width: 100%;
+    }
+    .cando .cando-solution .solution-des {
+        margin-left: 0px;
+    }
+    .cando .cando-solution img {
+        top: -300px;
+    }
+    .cando .solution-right .solution-right-games {
+        padding: 140px 80px;
+        border-radius: 50%;
+        color: black;
+        left: -50px;
+        top: 0px;
+    }
+    .cando .solution-right .solution-right-games div:nth-child(1) {
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+    .cando .solution-right .solution-right-providers {
+        padding: 90px 80px;
+        border-radius: 50%;
+        color: black;
+        bottom: -480px;
+        left: 120px
+    }
+    .cando .cando-solution .solution-container {
+        margin-left: 0;
+    }
+    .cando .solution-right .solution-right-providers div:nth-child(1) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    /* working css */
+    .working .left-img {
+        width: 100%;
+    }
+    .working .wrapper {
+        position: relative;
+        top: 300px;
+    }
+    /* game report res */
+    .game-report .wrapper {
+        flex-wrap: wrap;
+        top: 400px;
+    }
+    .game-report-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .game-report-img img {
+        width: 100%;
+    }
+    /* game provider */
+    .company .wrapper {
+        position: relative;
+        top: 400px;
+    }
+    .company .wrapper .company-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .company-item {
+        position: relative;
+        width: 130px;
+        height: 60px;
+    }
+    /* start casion */
+    .start-casio .wrapper {
+        position: relative;
+        top: 300px;
+    }
+    .start-casio .wrapper .start-casio-title {
+        text-align: left;
+        line-height: 3.2rem;
+    }
+    /* footer */
+    .footer .wrapper {
+        top: 400px;
+        background: inherit;
+    }
+    .footer .wrapper>* {
+        width: 100%;
+        flex: unset;
+        margin-bottom: 10px;
+    }
+}

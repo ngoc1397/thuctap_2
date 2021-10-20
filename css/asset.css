@@ -1,0 +1,451 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF2FB;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.line {
+    height: 1px;
+    background: black;
+}
+
+
+/* get talk */
+
+.get-talk {
+    position: fixed;
+    right: 0;
+    transform: translateX(100%);
+    top: 0;
+    bottom: 0;
+    padding: 110px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 1100;
+    transition: 0.3s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.show-talk {
+    transform: translateX(0);
+    transition: 0.3s linear;
+}
+
+.get-talk ion-icon {
+    color: #06BEE1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.get-talk ion-icon:hover {
+    cursor: pointer;
+}
+
+.get-talk>* {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.get-talk label {
+    margin-bottom: 10px;
+}
+
+.get-talk input {
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 35, 139, 0.425);
+    color: rgba(0, 35, 139, 0.425);
+}
+
+.get-talk textarea {
+    width: 100%;
+    outline: none;
+    height: 80px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 35, 139, 0.425);
+    color: rgba(0, 35, 139, 0.425);
+}
+
+.get-talk input:focus {
+    border: 1px solid rgba(0, 35, 139, 0.9);
+}
+
+.get-talk .get-talk-title {
+    font-size: 2.4rem;
+}
+
+.wrapper {
+    max-width: 1420px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wrapper .header {
+    z-index: 888;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header .header-logo {
+    margin-right: 200px;
+}
+
+.header .header-logo svg {
+    width: 110px;
+    height: 40px;
+}
+
+.header .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 1;
+    gap: 40px;
+}
+
+.header .header-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background: #06BEE1;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.header .btn-header {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.header .btn-header:hover {
+    cursor: pointer;
+}
+
+.header .btn-header ion-icon {
+    color: #666;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* css for menu mobile */
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    padding: 20px 15px;
+    background-color: white;
+    display: none;
+    transition: 0.2s linear;
+    flex-direction: column;
+}
+
+.menu-mobile .header-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-mobile .header-logo ion-icon {
+    width: 30px;
+    height: 30px;
+    color: #06BEE1;
+}
+
+.menu-mobile .header-logo ion-icon:hover {
+    cursor: pointer;
+}
+
+.menu-mobile .header-menu {
+    margin-top: 60px;
+    flex: 1;
+}
+
+.menu-mobile .header-menu .header-talk button {
+    width: 100%;
+    display: block;
+}
+
+.menu-mobile .header-menu li {
+    padding: 10px 0px;
+}
+
+.menu-mobile .header-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.show-menu {
+    transform: translate(0);
+    transition: 0.2s linear;
+}
+
+
+/* start casio*/
+
+
+/* start casio */
+
+.start-casio .wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.start-casio .wrapper .start-casio-title {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.start-casio .wrapper .start-casio-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgba(3, 0, 48, 0.329);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #999;
+    width: auto;
+}
+
+.start-casio .wrapper .start-casio-mail input {
+    border: none;
+    background-color: inherit;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+}
+
+
+/* css for footer */
+
+.footer {
+    background-image: linear-gradient(#EFF2FB, #FCFCFE);
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    justify-content: space-between;
+}
+
+.footer .wrapper>* {
+    flex: 1;
+}
+
+.footer .wrapper .footer-title {
+    font-weight: 600;
+}
+
+.footer .wrapper ul {
+    margin-top: 20px;
+}
+
+.footer .wrapper ul li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footer .wrapper .footer-res .footer-res-img {
+    padding: 10px 0px;
+}
+
+.footer .wrapper .footer-res .footer-res-img img {
+    margin-right: 10px;
+}
+
+.footer .wrapper .footer-author {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #B9C2DD;
+}
+
+.footer .wrapper .footer-author .footer-author-content {
+    margin: 10px 0px;
+}
+
+
+/* RESPOSIVE */
+
+@media(max-width: 740px) {
+    .wrapper .intro {
+        position: relative;
+    }
+    .wrapper .intro .get-started {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .wrapper .intro .back-ground {
+        position: relative;
+        display: block;
+        top: 100px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 500px;
+    }
+    .back-ground .bg-1 {
+        width: 100%;
+        left: 0;
+    }
+    .wrapper .back-ground .bg-2 {
+        width: 70%;
+        top: 90px;
+        left: -50px;
+    }
+    .wrapper .back-ground .bg-3 {
+        width: 80%;
+        top: 60px;
+        left: -80px;
+    }
+    .wrapper .back-ground .bg-4 {
+        width: 50%;
+        bottom: 140px;
+        right: 20px;
+    }
+    .menu-mobile {
+        display: flex;
+    }
+    .wrapper {
+        max-width: 95%;
+    }
+    .header .btn-header {
+        display: block;
+    }
+    .header .header-menu {
+        display: none;
+    }
+    .header .header-talk {
+        display: none;
+    }
+    /* res for can do */
+    .cando .wrapper .cando-container .cando-item {
+        width: 100%;
+    }
+    /* res for cando container */
+    .cando .cando-solution .solution-container {
+        width: 100%;
+    }
+    .cando .cando-solution .solution-right {
+        width: 100%;
+    }
+    .cando .cando-solution .solution-des {
+        margin-left: 0px;
+    }
+    .cando .cando-solution img {
+        top: -300px;
+    }
+    .cando .solution-right .solution-right-games {
+        padding: 140px 80px;
+        border-radius: 50%;
+        color: black;
+        left: -50px;
+        top: 0px;
+    }
+    .cando .solution-right .solution-right-games div:nth-child(1) {
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+    .cando .solution-right .solution-right-providers {
+        padding: 90px 80px;
+        border-radius: 50%;
+        color: black;
+        bottom: -480px;
+        left: 120px
+    }
+    .cando .cando-solution .solution-container {
+        margin-left: 0;
+    }
+    .cando .solution-right .solution-right-providers div:nth-child(1) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    /* working css */
+    .working .left-img {
+        width: 100%;
+    }
+    .working .wrapper {
+        position: relative;
+        top: 300px;
+    }
+    /* game report res */
+    .game-report .wrapper {
+        flex-wrap: wrap;
+        top: 400px;
+    }
+    .game-report-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .game-report-img img {
+        width: 100%;
+    }
+    /* game provider */
+    .company .wrapper {
+        position: relative;
+        top: 400px;
+    }
+    .company .wrapper .company-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .company-item {
+        position: relative;
+        width: 130px;
+        height: 60px;
+    }
+    /* start casion */
+    .start-casio .wrapper {
+        position: relative;
+    }
+    .start-casio .wrapper .start-casio-title {
+        text-align: left;
+        line-height: 3.2rem;
+    }
+    /* footer */
+    .footer .wrapper>* {
+        width: 100%;
+        flex: unset;
+        margin-bottom: 10px;
+    }
+}
