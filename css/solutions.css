@@ -1,0 +1,217 @@
+body {
+    position: relative;
+}
+
+.main-bg {
+    background: url('/img/solutions/solutions-bg.svg');
+    position: absolute;
+    background-position: center 150px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.footer-bg {
+    background: url('/img/solutions/footer-bg.svg') center bottom -1050px no-repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+}
+
+.intro .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.intro .wrapper .intro-left>* {
+    margin-bottom: 40px;
+}
+
+.intro .wrapper .intro-left-title {
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+.intro .wrapper .intro-left-des {
+    font-weight: 300;
+    color: #666;
+    line-height: 1.5rem;
+}
+
+.intro-left .intro-left-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgba(3, 0, 48, 0.329);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #999;
+    width: auto;
+}
+
+.intro-left .intro-left-mail input {
+    border: none;
+    width: 200px;
+    background-color: inherit;
+    padding: 0 10px;
+    outline: none;
+}
+
+
+/* css for explore */
+
+.wrapper .explore {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: aliceblue;
+}
+
+
+/* css for API */
+
+.api .wrapper {
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+}
+
+.api .wrapper .api-left {
+    margin-left: 100px;
+}
+
+.api-content>* {
+    margin-bottom: 30px;
+}
+
+.api-content .api-content-header {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+}
+
+.api-content .api-content-des {
+    line-height: 1.8rem;
+}
+
+
+/* power full css */
+
+.powerful .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.powerful .wrapper .powerful-right {
+    margin-right: 100px;
+}
+
+
+/* css for rich game */
+
+.richgame .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.richgame .wrapper .richgame-left {
+    margin-left: 100px;
+}
+
+
+/* css for intergration */
+
+.inter .wrapper .inter-header {
+    font-size: 2.3rem;
+}
+
+.inter .wrapper .inter-content {
+    margin-top: 30px;
+    gap: 40px;
+    display: flex;
+    color: #7A7A7E;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    flex-wrap: nowrap;
+    margin-bottom: 350px;
+}
+
+.inter .wrapper .inter-content .inter-des {
+    flex: 1;
+}
+
+.inter .wrapper .inter-content .inter-item {
+    list-style-image: url(/img/solutions/tick.svg);
+    list-style-position: inside;
+    flex: 1;
+}
+
+.inter .wrapper .inter-content .inter-item li {
+    margin-bottom: 10px;
+}
+
+
+/* responsive */
+
+@media(max-width:740px) {
+    /* intro res */
+    .intro .wrapper .intro-right img {
+        width: 100%;
+    }
+    .intro .wrapper {
+        flex-wrap: wrap;
+    }
+    /* api res */
+    .api .wrapper {
+        flex-wrap: wrap;
+    }
+    .api .wrapper .api-left {
+        margin-left: 0;
+    }
+    .api .wrapper .api-right img {
+        width: 100%;
+    }
+    /* powerfull res */
+    .powerful .wrapper {
+        flex-wrap: wrap;
+    }
+    .powerful .wrapper .powerful-left img {
+        width: 100%;
+    }
+    .powerful .wrapper .powerful-right {
+        margin: 0;
+    }
+    /* rich game res */
+    .richgame .wrapper {
+        flex-wrap: wrap;
+    }
+    .richgame .wrapper .richgame-right img {
+        width: 100%;
+    }
+    .richgame .wrapper .richgame-left {
+        margin: 0;
+    }
+    /* inter res */
+    .inter .wrapper .inter-content {
+        flex-wrap: wrap;
+    }
+    .inter .wrapper .inter-content .inter-des {
+        flex: unset;
+    }
+    .inter .wrapper .inter-content .inter-item {
+        flex: unset;
+    }
+    .inter .wrapper .inter-content {
+        margin-bottom: 100px;
+    }
+    .footer-bg {
+        background: url('/img/solutions/footer-bg.svg') center bottom -800px no-repeat;
+    }
+}

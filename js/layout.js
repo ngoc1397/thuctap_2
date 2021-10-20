@@ -19,4 +19,7 @@ $(document).ready(function() {
         $('#popup-for-provider').toggleClass('show-popup')
         $('#popup-for-filter').removeClass('show-popup')
     })
+    $('.dropdown-api').click(function() {
+        $('.dropdown-api-content').toggleClass('show-api-menu')
+    })
 })

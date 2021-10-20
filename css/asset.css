@@ -12,6 +12,41 @@ html::-webkit-scrollbar {
     background: black;
 }
 
+.dropdown-api:hover {
+    cursor: pointer;
+}
+
+.dropdown-api {
+    position: relative;
+    font-weight: inherit;
+}
+
+.dropdown-api-content {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 180px;
+    z-index: 100;
+}
+
+.show-api-menu {
+    display: block;
+}
+
+.dropdown-api .dropdown-api-content li {
+    margin-bottom: 30px;
+}
+
+.dropdown-api .dropdown-api-content li a {
+    font-weight: 300;
+}
+
 
 /* get talk */
 
@@ -123,6 +158,12 @@ html::-webkit-scrollbar {
     color: black;
 }
 
+.header .header-menu li {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
 .btn {
     padding: 16px;
     border-radius: 25px;
@@ -217,6 +258,25 @@ html::-webkit-scrollbar {
 
 /* start casio*/
 
+.wrapper .intro .get-started .get-started-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgba(3, 0, 48, 0.329);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #999;
+    width: auto;
+}
+
+.wrapper .intro .get-started .get-started-mail input {
+    border: none;
+    width: 200px;
+    background-color: inherit;
+    padding: 0 10px;
+    outline: none;
+}
+
 
 /* start casio */
 
@@ -248,6 +308,50 @@ html::-webkit-scrollbar {
     width: 200px;
     padding: 0 10px;
     outline: none;
+}
+
+
+/* start casio white */
+
+.start-casio.white .wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+
+.start-casio.white .wrapper .start-casio-title {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.start-casio.white .wrapper .start-casio-mail {
+    font-size: 1rem;
+    display: inline-flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: auto;
+}
+
+.start-casio.white .wrapper .start-casio-mail .btn {
+    background: white;
+    color: #09B2DE;
+}
+
+.start-casio.white .wrapper .start-casio-mail input {
+    border: none;
+    background-color: inherit;
+    width: 200px;
+    color: white;
+    padding: 0 10px;
+    outline: none;
+}
+
+.start-casio.white .wrapper .start-casio-mail input::placeholder {
+    color: white;
+    opacity: 0.8;
 }
 
 
@@ -300,10 +404,60 @@ html::-webkit-scrollbar {
 }
 
 
+/* footer white */
+
+.footer.white {
+    color: white;
+    background-image: linear-gradient(#EFF2FB, #FCFCFE);
+}
+
+.footer.white .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    justify-content: space-between;
+}
+
+.footer.white .wrapper>* {
+    flex: 1;
+}
+
+.footer.white .wrapper .footer-title {
+    font-weight: 600;
+}
+
+.footer.white .wrapper ul {
+    margin-top: 20px;
+}
+
+.footer.white .wrapper ul li {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footer.white .wrapper .footer-res .footer-res-img {
+    padding: 10px 0px;
+}
+
+.footer.white .wrapper .footer-res .footer-res-img img {
+    margin-right: 10px;
+}
+
+.footer.white .wrapper .footer-author {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #ffffff;
+}
+
+.footer.white .wrapper .footer-author .footer-author-content {
+    margin: 10px 0px;
+}
+
+
 /* RESPOSIVE */
 
 @media(max-width: 740px) {
-    .wrapper .intro {
+    /* .wrapper .intro {
         position: relative;
     }
     .wrapper .intro .get-started {
@@ -340,7 +494,7 @@ html::-webkit-scrollbar {
         width: 50%;
         bottom: 140px;
         right: 20px;
-    }
+    } */
     .menu-mobile {
         display: flex;
     }

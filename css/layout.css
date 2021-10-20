@@ -7,6 +7,41 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+.dropdown-api:hover {
+    cursor: pointer;
+}
+
+.dropdown-api {
+    position: relative;
+    font-weight: inherit;
+}
+
+.dropdown-api-content {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 180px;
+    z-index: 1200;
+}
+
+.show-api-menu {
+    display: block;
+}
+
+.dropdown-api .dropdown-api-content li {
+    margin-bottom: 30px;
+}
+
+.dropdown-api .dropdown-api-content li a {
+    font-weight: 300;
+}
+
 
 /* get talk */
 
