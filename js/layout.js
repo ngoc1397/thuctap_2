@@ -22,4 +22,14 @@ $(document).ready(function() {
     $('.dropdown-api').click(function() {
         $('.dropdown-api-content').toggleClass('show-api-menu')
     })
+    $(window).scroll(function() {
+        var kq = this.scrollY;
+        if (kq >= 1266) {
+            $('.cando .solution-right .solution-right-games').css('top', -200 - (0.08 * kq) + 'px');
+            $('.cando .solution-right .solution-right-providers').css('bottom', -80 + (0.08 * kq) + 'px');
+        } else {
+            $('.cando .solution-right .solution-right-games').css('top', -200 + 'px');
+            $('.cando .solution-right .solution-right-providers').css('bottom', -80 + 'px');
+        }
+    })
 })
