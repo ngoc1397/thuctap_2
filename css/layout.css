@@ -615,6 +615,16 @@ html::-webkit-scrollbar {
 
 .company-item:hover .company-item-second {
     z-index: 3;
+    animation: popup-pro 0.3s linear;
+}
+
+@keyframes popup-pro {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .company-item-first {
@@ -625,7 +635,6 @@ html::-webkit-scrollbar {
 .company-item-second {
     position: absolute;
     z-index: -1;
-    transition: 0.5s;
 }
 
 
