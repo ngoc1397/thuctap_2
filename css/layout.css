@@ -151,6 +151,18 @@ html::-webkit-scrollbar {
     text-decoration: none;
     font-weight: 600;
     color: black;
+    position: relative;
+}
+
+.header .header-menu li a span {
+    content: "";
+    position: absolute;
+    top: 100%;
+    background-color: #09B2DE;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 50%;
 }
 
 .btn {
@@ -522,12 +534,32 @@ html::-webkit-scrollbar {
 
 .working-right .working-right-report ul li {
     margin-bottom: 30px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .working .left-img {
     z-index: 100;
     width: 600px;
+}
+
+.non-active {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+}
+
+.non-active:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 600;
+    color: white;
+}
+
+.active:hover {
+    color: white;
 }
 
 
@@ -581,6 +613,19 @@ html::-webkit-scrollbar {
     width: 30px;
     height: 30px;
 }
+
+
+/* 
+.game-report-img {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+} */
+
+
+/* .game-report-img img {
+    position: absolute;
+} */
 
 .btn-getit .btn-content .btn-header {
     font-size: 0.7rem;
@@ -699,6 +744,11 @@ html::-webkit-scrollbar {
 .footer .wrapper ul li {
     margin-bottom: 15px;
     font-size: 0.9rem;
+}
+
+.footer .wrapper ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer .wrapper .footer-res .footer-res-img {

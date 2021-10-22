@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/asset.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/layout.js"></script>
+    <title>News</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-logo">
+                <img src="./img/asset/logo.svg" />
+            </div>
+            <ul class="header-menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/new.html">News</a></li>
+                <li><a href="/game.html">Games</a></li>
+                <li><a href="/solutions.html">Solutions</a></li>
+                <li class="dropdown-api">
+                    API <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.986 1.186a.6.6 0 0 1 .848.848l-4.338 4.34a2.1 2.1 0 0 1-2.968.003l-4.342-4.33a.6.6 0 0 1 .848-.85l4.341 4.33a.9.9 0 0 0 1.272 0l4.339-4.341z" fill="currentColor" stroke="currentColor" stroke-width=".6"></path></svg>
+                    <ul class="dropdown-api-content">
+                        <li><a href="/solutions.html">Operators</a></li>
+                        <li><a href="/solutions.html">Provider</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-talk">
+                <button class="btn" id="btn-talk">LET'S TALK</button>
+            </div>
+            <div class="btn-header" id="btn-open-menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="menu-mobile">
+            <div class="header-logo">
+                <img src="./img/asset/logo.svg" />
+                <ion-icon name="close-outline" id="btn-close-menu"></ion-icon>
+            </div>
+            <ul class="header-menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/new.html">News</a></li>
+                <li><a href="/game.html">Games</a></li>
+                <li><a href="/solutions.html">Solutions</a></li>
+                <li class="dropdown-api">
+                    API <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.986 1.186a.6.6 0 0 1 .848.848l-4.338 4.34a2.1 2.1 0 0 1-2.968.003l-4.342-4.33a.6.6 0 0 1 .848-.85l4.341 4.33a.9.9 0 0 0 1.272 0l4.339-4.341z" fill="currentColor" stroke="currentColor" stroke-width=".6"></path></svg>
+                    <ul class="dropdown-api-content">
+                        <li><a href="/solutions.html">Operators</a></li>
+                        <li><a href="/solutions.html">Provider</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-talk">
+                <button class="btn">LET'S TALK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Let's talk menu -->
+    <div class="get-talk" id="get-talk">
+        <ion-icon name="close-outline" id="btn-close-talk"></ion-icon>
+        <div class="get-talk-title">
+            Get in touch
+        </div>
+        <div class="get-talk-des">
+            Send us your questions, feedback or feature requests.
+        </div>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter name" id="name" />
+        <label for="name">Email</label>
+        <input type="text" placeholder="Enter email" id="name" />
+        <label for="name">Message</label>
+        <textarea type="text" placeholder="Message" id="name"></textarea>
+    </div>
+
+    <div class="about-content">
+        <div class="back-ground-1"></div>
+        <div class="back-ground-2"></div>
+        <div class="wrapper">
+            <div class="about-left">
+                <div class="about-left-header">
+                    About Us
+                </div>
+                <div class="about-left-content">
+                    Hub88 is a lightweight integration platform built on Elixir which initially was created during a Hackathon for the Coingaming Group. The goal was to reduce our references to the “game integration roadmap” and “we’ll integrate you in the next quarter or
+                    two”.
+                </div>
+                <div class="about-left-bottom">
+                    We believe there should be a single API framework, which all casino suppliers adhere to. As this will never happen in our industry, we simply wanted to provide our partners with a single API to do everything. We consider ourselves to be a simple, yet
+                    smart pipeline to access many tier 1 suppliers. However, considering our humble beginnings, we are always happy to support new studios, suppliers and game developers with distribution as well as providing key components such as game
+                    engines, provably fair RNGs, RGS and investments into new start-ups.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-company">
+        <div class="wrapper">
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/asia-gaming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/asia-gaming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/betsoft.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/betsoft.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/big-time-gaming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/big-time-gaming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/blueprint.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/blueprint.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/booming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/booming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/boongo.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/boongo.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/caleta.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/caleta.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/ebet.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/ebet.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/egt.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/egt.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/evoplay.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/evoplay.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/ezugi.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/ezugi.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/gameart.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/gameart.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/golden-hero.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/golden-hero.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/goldenrace.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/goldenrace.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/green-jade.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/green-jade.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/habanero.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/habanero.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/hacksaw-gaming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/hacksaw-gaming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/indi-slots.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/indi-slots.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/kalamba.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/kalamba.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/microgaming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/microgaming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/netent.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/netent.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/nolimit-city.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/nolimit-city.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/onetouch.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/onetouch.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/oryx-gaming.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/oryx-gaming.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/pgsoft.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/pgsoft.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/playngo.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/playngo.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/playson.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/playson.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/pragmatic-play.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/pragmatic-play.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/push-gaming.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/push-gaming.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/quickspin.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/quickspin.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/red-tiger.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/red-tiger.svg" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/relaxgaming.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/relaxgaming.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/spadegaming.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/spadegaming.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/spinomenal.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/spinomenal.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/spribe.png" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/spribe.png" />
+                </div>
+            </div>
+            <div class="company-item">
+                <div class="company-item-first">
+                    <img src="./img/provider/non_color/super-spade.svg" />
+                </div>
+                <div class="company-item-second">
+                    <img src="./img/provider/colored/super-spade.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start casio -->
+
+    <div class="start-casio">
+        <div class="wrapper">
+            <div class="start-casio-title">
+                Start your casino business journey with Hub88
+            </div>
+            <div class="start-casio-mail">
+                <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS" />
+                <button class="btn">LET'S TALK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-company">
+                <div class="footer-title">
+                    Company
+                </div>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/new.html">News</a></li>
+                    <li><a href="/game.html">Games</a></li>
+                    <li><a href="/solutions.html">Solutions</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-api">
+                <div class="footer-title">
+                    API
+                </div>
+                <ul>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+            <div class="footer-res">
+                <div class="footer-title">
+                    Responsible Gaming
+                </div>
+                <div class="footer-res-img">
+                    <img src="./img/footer/18.png" />
+                    <img src="./img/footer/ga.png" />
+                    <img src="./img/footer/gamcare.png" />
+                </div>
+            </div>
+            <div class="footer-author">
+                <div class="footer-title">
+                    <img src="./img/footer/mga.png" />
+                </div>
+                <div class="footer-author-content">
+                    This website is operated by TheNgoc Limited, a company registered in Malta under company registration number C86394. Registered address: Triq MRO Frank Galea, Zebbug, ZBG9019, MALTA. HUB88 Limited is licensed and regulated by the Malta Gaming Authority:
+                    B2B Critical Supply License number MGA/B2B/536/2018.
+                </div>
+                <div>
+                    Copyright © 2021. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -154,8 +154,20 @@ html::-webkit-scrollbar {
 
 .header .header-menu li a {
     text-decoration: none;
+    position: relative;
     font-weight: 600;
     color: black;
+}
+
+.header .header-menu li a span {
+    content: "";
+    position: absolute;
+    top: 100%;
+    background-color: #09B2DE;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: 50%;
 }
 
 .header .header-menu li {
@@ -383,6 +395,11 @@ html::-webkit-scrollbar {
 .footer .wrapper ul li {
     margin-bottom: 15px;
     font-size: 0.9rem;
+}
+
+.footer .wrapper ul li a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer .wrapper .footer-res .footer-res-img {

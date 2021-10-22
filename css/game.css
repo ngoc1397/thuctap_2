@@ -39,6 +39,14 @@
     position: relative;
 }
 
+.game-search .game-search-filter span {
+    user-select: none;
+}
+
+.game-search .game-search-filter.active {
+    color: #2846C0;
+}
+
 .game-search .game-search-filter:hover {
     cursor: pointer;
 }
@@ -80,6 +88,14 @@
     font-weight: 600;
     color: rgba(0, 0, 0, 0.322);
     position: relative;
+}
+
+.game-search .game-search-provider span {
+    user-select: none;
+}
+
+.game-search .game-search-provider.active {
+    color: #2846C0;
 }
 
 .game-search .game-search-provider:hover {
