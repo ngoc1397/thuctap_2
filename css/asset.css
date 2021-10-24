@@ -159,6 +159,11 @@ html::-webkit-scrollbar {
     color: black;
 }
 
+.header .header-menu li a:hover {
+    color: #2846C0;
+    transition: 0.2s;
+}
+
 .header .header-menu li a span {
     content: "";
     position: absolute;
